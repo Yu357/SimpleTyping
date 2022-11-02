@@ -1,0 +1,72 @@
+/* ページ全体関連 */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: #eee;
+}
+
+/* header関連 */
+header {
+  width: 100%;
+  height: 50px;
+  background-color: skyblue;
+  box-shadow: 4px 4px 4px #ccc;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+.global-nav {
+  height: 100%;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.global-nav-logo {
+  height: 100%;
+  float: left;
+  margin-left: 30px;
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: fantasy;
+}
+
+
+.global-nav-items-container {
+  height: 100%;
+  float: right;
+  margin-right: 30px;
+  line-height: 50px;
+  font-size: 0;
+}
+.global-nav-item {
+  width: 80px;
+  height: 100%;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media (max-width: 670px){
+  .global-nav {
+    width: 100%;
+  }
+  .global-nav-logo {
+    margin-left: 10px;
+  }
+  .global-nav-items-container {
+    margin-right: 0;
+  }
+}
+.global-nav-item:hover {
+  background-color: #a1d8fd;
+}
